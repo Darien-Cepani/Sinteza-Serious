@@ -60,6 +60,7 @@ html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -868,6 +869,10 @@ a:hover, span:hover {
   padding-top: 100px !important;
 }
 
+.pb-150 {
+  padding-top: 150px !important;
+}
+
 /*-------------------------------------------------------
 		 padding-bottom  (0/100) +5
 -------------------------------------------------------*/
@@ -1242,9 +1247,18 @@ a:hover, span:hover {
   height: 6px;
   z-index: 10000001;
   background-color: #12c2e9;
-  -webkit-transition: width .3s ease-in-out, height .3s ease-in-out, margin .3s ease-in-out, opacity .3s ease-in-out;
-  -o-transition: width .3s ease-in-out, height .3s ease-in-out, margin .3s ease-in-out, opacity .3s ease-in-out;
-  transition: width .3s ease-in-out, height .3s ease-in-out, margin .3s ease-in-out, opacity .3s ease-in-out;
+  -webkit-transition: width .3s ease-in-out,
+ height .3s ease-in-out,
+ margin .3s ease-in-out,
+ opacity .3s ease-in-out;
+  -o-transition: width .3s ease-in-out,
+ height .3s ease-in-out,
+ margin .3s ease-in-out,
+ opacity .3s ease-in-out;
+  transition: width .3s ease-in-out,
+ height .3s ease-in-out,
+ margin .3s ease-in-out,
+ opacity .3s ease-in-out;
 }
 
 .cursor-inner.cursor-hover {
@@ -1601,6 +1615,10 @@ a:hover, span:hover {
   transition: all .4s;
 }
 
+.row{
+  justify-content: center;
+}
+
 .butn:hover .char {
   -webkit-animation: fadeInUp 0.3s cubic-bezier(0.3, 0, 0.7, 1) both;
   animation: fadeInUp 0.3s cubic-bezier(0.3, 0, 0.7, 1) both;
@@ -1652,6 +1670,9 @@ a:hover, span:hover {
 
 .butn.curve {
   border-radius: 5px;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
 }
 
 .butn.radius {
@@ -1708,6 +1729,11 @@ a:hover, span:hover {
   color: #fff;
   padding: 15px 7px;
   margin: 10px 15px;
+}
+
+.nav-link .active{
+  color: black;
+  background-color: white;
 }
 
 .navbar .navbar-nav .dropdown-menu {
@@ -1834,7 +1860,7 @@ a:hover, span:hover {
 }
 
 .navbar .logo {
-  width: 50px;
+  width: 120px;
 }
 
 .nav-scroll {
@@ -1878,7 +1904,7 @@ a:hover, span:hover {
 }
 
 .topnav .logo {
-  width: 50px;
+  width: 100px;
 }
 
 .topnav .menu-icon {
@@ -2945,9 +2971,12 @@ a:hover, span:hover {
   color: #fff;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: opacity .5s, visibility .5s;
-  -o-transition: opacity .5s, visibility .5s;
-  transition: opacity .5s, visibility .5s;
+  -webkit-transition: opacity .5s,
+ visibility .5s;
+  -o-transition: opacity .5s,
+ visibility .5s;
+  transition: opacity .5s,
+ visibility .5s;
 }
 
 .slider-bus .caption p {
@@ -4234,6 +4263,10 @@ a:hover, span:hover {
   position: relative;
 }
 
+#services{
+  scroll-margin: 100px;
+}
+
 .services .container {
   position: relative;
   z-index: 2;
@@ -4438,6 +4471,10 @@ a:hover, span:hover {
   margin-top: 30px;
   padding: 60px 40px;
   border-radius: 20px;
+}
+
+.col-lg-4 {
+  margin-bottom: 30px;
 }
 
 .services.lficon .item-box.no-curve {
@@ -6681,10 +6718,12 @@ a:hover, span:hover {
 .blog .item .cont {
   margin-top: 30px;
   position: relative;
+  justify-content: center;
   z-index: 2;
 }
 
 .blog .item .info {
+  display: none;
   margin-bottom: 10px;
   font-size: 12px;
 }
@@ -6718,7 +6757,7 @@ a:hover, span:hover {
 }
 
 .blog .item .btn-more {
-  margin-top: 15px;
+  margin-top: 0px;
   color: #eee;
 }
 
@@ -7954,7 +7993,7 @@ footer .item .copy-right p a {
   }
   .navbar .logo {
     margin-left: 15px;
-    width: 50px;
+    width: 100px;
   }
   .nav-scroll .navbar-collapse .nav-link,
   .light .navbar-collapse .nav-link {
@@ -7984,6 +8023,7 @@ footer .item .copy-right p a {
   .navbar .search .search-form form input {
     padding: 15px;
     width: 100%;
+    background-color: transparent;
     font-size: 14px;
   }
   .navbar .search .icon,
@@ -8255,7 +8295,7 @@ footer .item .copy-right p a {
     bottom: 15px;
   }
   .navbar .logo {
-    width: 40px;
+    width: 120px;
   }
   .hamenu .menu-links .main-menu > li {
     font-size: 24px;
